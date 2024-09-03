@@ -6,7 +6,7 @@ const mockTodos = [
   {
     id: '1',
     title: 'todo 1',
-    completed: false
+    completed: true
   },
   {
     id: '2',
@@ -24,9 +24,11 @@ const App = ():JSX.Element => {
 
   const [todos, setTodos] = useState(mockTodos);
 
-  return (
-   <Todos todos={todos} />
-  )
+  return (<div className='todoapp'>
+    <Todos todos={todos} />
+  </div>
+
+  );
 }
 
 export default App
