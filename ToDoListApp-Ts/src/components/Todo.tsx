@@ -1,4 +1,8 @@
-export const Todo: React.FC<props> = ({id,title,completed}) => {
+import { type Todo as TodoType } from '../types';
+
+type Props = TodoType
+
+export const Todo: React.FC<Props> = ({ id, title, completed }) => {
     return (
         <div className="view">
             <input
@@ -7,7 +11,13 @@ export const Todo: React.FC<props> = ({id,title,completed}) => {
                 checked={completed}
                 onChange={() => { }}                
             />
-        <label >{title}</label>
+            <label >{title}</label>
+            <button
+                className='destroy'
+                onClick={() => { }}
+            />
+
+            
         </div>
     );
 }
