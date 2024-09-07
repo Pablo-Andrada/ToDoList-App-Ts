@@ -22,5 +22,5 @@ export const Todos: React.FC <Props> = ({ todos }) => {
                 </li>
             ))}
         </ul>
-    );
+    )
 }
