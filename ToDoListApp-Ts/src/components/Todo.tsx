@@ -25,5 +25,5 @@ export const Todo: React.FC<Props> = ({ id, title, completed,onRemoveTodo }) => 
 
             
         </div>
-    );
+    )
 }
